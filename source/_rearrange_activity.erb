@@ -1,0 +1,18 @@
+<div class="row activity-section">
+	<span class="col-md-12">
+		<ul class="col-md-<%= activity_column_size %> sortable activity">
+			<% output_word_order = {} %>
+			<% word_order.each_with_index do |(chinese_phrase, display_order), correct_order| %>
+			<% 	output_word_order[display_order] = {:chinese_phrase => chinese_phrase, :correct_order => correct_order} %>
+			<% end %>
+			<% output_word_order.sort.each do |_, value| %>
+			<%  unicode_phrase = unicodify(value[:chinese_phrase]) %>
+				<li data-value="<%= value[:correct_order] %>"><%= unicode_phrase %>
+			<% end %>
+		</ul>
+		<div class="col-md-<%= 12-activity_column_size %> js-activity-validate" style="display: none;">
+			<span class="activity-check glyphicon glyphicon-ok"></span>
+			<span><%= unicodify(congrats_text[:chinese]) + congrats_text[:english] %></span>
+		</div>
+	</span>
+</div>

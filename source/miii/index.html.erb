@@ -1,0 +1,108 @@
+---
+title: "Mandarin III"
+desc: "The site for Mandarin III Videos at the Miami Valley School"
+---
+
+<% content_for :stylesheets do %>
+	<%= stylesheet_link_tag "home", "video", "activitystyle" %>
+<% end %>
+
+<% content_for :javascripts do %>
+	<%= javascript_include_tag "jquery-sortable-min", "interactive" %>
+<% end %>
+
+<div class="container">
+	<div class="blog-header">
+		<h1 class="blog-title">Mandarin III Videos</h1>
+		<p class="lead blog-description">Mandarin II Review, Grammar, and Pronunciation Practice</p>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-8 blog-main">
+			<div class="blog-post">
+				<h2 id="mii-review" class="blog-post-title">Mandarin II Review Time!</h2>
+				<p>So... Remember how Mandarin II was a thing? Check out some of these videos to review some important grammatical structures from last year.</p>
+				<hr>
+				<h3 id="sentence-structure">Basic Sentence Structure</h3>
+				<h4 id="svo-sentences">Sentence Order: Subject-Verb-Object</h4>
+				<div class="video-container">
+					<iframe src="//www.youtube.com/embed/Lz3aFlhUYDA" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<h5>Activity!</h5>
+				<p>Rearrange the words below to form a grammatically correct sentence.</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"我的朋友" => 1, "有" => 0, "妹妹" => 2, "。" => 3 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now you can proceed to the next video." },
+							  :activity_column_size => 5
+							}) %>
+				<h3 id="time-phrases">Time Phrases</h3>
+				<h4 id="basic-time-phrases">Basic Time Phrases</h4>
+				<div class="video-container">
+					<iframe src="//www.youtube.com/embed/HqkssAFo0Xw" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<h5>Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
+				<div class="row activity-section">
+					<span class="col-md-12">
+						<ul class="col-md-7 sortable activity">
+					    <li data-value="2">&#25105;&#30340;&#26379;&#21451;
+					    <li data-value="1">&#65292;
+					    <li data-value="3">&#30475;&#30005;&#24433;
+					    <li data-value="0">&#27599;&#22825;
+					    <li data-value="4">&#12290;
+						</ul>
+						<div class="col-md-5 js-activity-validate" style="display: none;">
+							<span class="activity-check glyphicon glyphicon-ok"></span>
+							<span>&#23545;&#65281; Correct! Now you can proceed to the second sentence.</span>
+						</div>
+					</span>
+				</div>
+				<div class="row activity-section">
+					<span class="col-md-12">
+						<ul class="col-md-7 sortable activity">
+					    <li data-value="4">&#19978;&#29677;
+					    <li data-value="1">&#26089;&#19978;&#20843;&#28857;
+					    <li data-value="3">&#26657;&#36710;
+					    <li data-value="0">&#25105;&#30340;&#24351;&#24351;
+					    <li data-value="2">&#22352;
+					    <li data-value="5">&#12290;
+						</ul>
+						<div class="col-md-5 js-activity-validate" style="display: none;">
+							<span class="activity-check glyphicon glyphicon-ok"></span>
+							<span>&#23545;&#65281; Correct! Now you can proceed to the next video.</span>
+						</div>
+					</span>
+				</div>
+			</div><!-- /.blog-post -->
+		</div><!-- /.blog-main -->
+
+		<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+			<div class="sidebar-module">
+				<h4>Table of Contents</h4>
+				<ol class="list-unstyled">
+					<li><a href="#mii-review">Mandarin II Review</a></li>
+						<ol>
+							<li><a href="#sentence-structure">Basic Sentence Structure</a></li>
+								<ol>
+									<li><a href="#svo-sentences">SVO Order</a></li>
+								</ol>
+							<li><a href="#time-phrases">Time Phrases</a></li>
+								<ol>
+									<li><a href="#basic-time-phrases">Basic Time Phrases</a></li>
+								</ol>
+						</ol>
+				</ol>
+			</div>
+		</div><!-- /.blog-sidebar -->
+	</div><!-- /.row -->
+</div><!-- /.container -->
+
+<div class="blog-footer">
+	<p>Blog template built with <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+	<p>
+		<a href="#">Back to top</a>
+	</p>
+</div>
