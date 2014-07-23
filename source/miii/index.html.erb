@@ -38,9 +38,7 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							}) %>
 				<h3 id="time-phrases">Time Phrases</h3>
 				<h4 id="basic-time-phrases">Basic Time Phrases</h4>
-				<div class="video-container">
-					<iframe src="//www.youtube.com/embed/HqkssAFo0Xw" frameborder="0" allowfullscreen></iframe>
-				</div>
+				<%= partial(:video, :locals => {:video_link => "HqkssAFo0Xw"}) %>
 				<h5>Activity!</h5>
 				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
 				<%= partial(:rearrange_activity,
