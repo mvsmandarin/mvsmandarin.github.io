@@ -25,9 +25,7 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 				<hr>
 				<h3 id="sentence-structure">Basic Sentence Structure</h3>
 				<h4 id="svo-sentences">Sentence Order: Subject-Verb-Object</h4>
-				<div class="video-container">
-					<iframe src="//www.youtube.com/embed/Lz3aFlhUYDA" frameborder="0" allowfullscreen></iframe>
-				</div>
+				<%= partial(:video, :locals => {:video_link => "Lz3aFlhUYDA"}) %>
 				<h5>Activity!</h5>
 				<p>Rearrange the words below to form a grammatically correct sentence.</p>
 				<%= partial(:rearrange_activity,
