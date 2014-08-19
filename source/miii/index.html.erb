@@ -77,6 +77,26 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								:english => "Correct! Now you can proceed to the next video." },
 							  :activity_column_size => 8
 							}) %>
+				<h4 id="yi-hou">Time Phrases using &#20197;&#21518;</h4>
+				<%= partial(:video, :locals => {:video_link => "K0nLprOgbOI"}) %>
+				<h5 id="yi-hou-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"三点" => 1, "以后" => 3, "，" => 0, "我" => 4, "看电影" => 2, "。" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"我姐姐" => 3, "放学" => 1, "以后" => 4, "喜欢" => 2, "吃晚饭" => 0, "。" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now you can proceed to the next video." },
+							  :activity_column_size => 7
+							}) %>
 			</div><!-- /.blog-post -->
 		</div><!-- /.blog-main -->
 
@@ -93,7 +113,8 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							<li><a href="#time-phrases">Time Phrases</a></li>
 								<ol>
 									<li><a href="#basic-time-phrases">Basic Time Phrases</a></li>
-									<li><a href="#de-shi-hou">Basic Time Phrases</a></li>
+									<li><a href="#de-shi-hou">&#30340;&#26102;&#20505;</a></li>
+									<li><a href="#yi-hou">&#20197;&#21518;</a></li>
 								</ol>
 						</ol>
 				</ol>
