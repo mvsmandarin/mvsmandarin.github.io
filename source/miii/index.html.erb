@@ -107,7 +107,7 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 				<p>This is &#33673;&#33673;'s schedule: 7:00am- Wake up, 7:30am- Go to school, 3:00pm- Return home, 4:00pm: Do homework, 7:00pm: Read, 8:00pm: Sleep. Rearrange the words below to form a grammatically correct sentence about her schedule (including proper punctuation placement).</p>
 				<%= partial(:rearrange_activity,
 							:locals => {
-							  :word_order => {"莉莉" => 1, "先" => 3, "做作业" => 0, "，" => 4, "然后" => 2, "看书" => 5, "。" => 6 },
+							  :word_order => {"莉莉" => 5, "先" => 3, "做作业" => 0, "，" => 4, "然后" => 2, "看书" => 1, "。" => 6 },
 							  :congrats_text => {
 								:chinese => "对！",
 								:english => "Correct! Now proceed to the next video!" },
@@ -119,10 +119,32 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 				<p>Rearrange the words below to form a grammatically correct sentence (including proper punctuation placement).</p>
 				<%= partial(:rearrange_activity,
 							:locals => {
-							  :word_order => {"我" => 1, "今年" => 3, "去" => 0, "过" => 4, "中国" => 2, "。" => 5 },
+							  :word_order => {"我" => 1, "今年" => 2, "去" => 0, "过" => 4, "中国" => 3, "。" => 5 },
 							  :congrats_text => {
 								:chinese => "对！",
 								:english => "Correct! Now proceed to the next video!" },
+							  :activity_column_size => 7
+							}) %>
+				<h3 id="basic-place">Basic Place Phrases</h3>
+				<p>Great work so far! Check out this next video to learn about place phrases!</p>
+				<h4 id="place-phrases">Place Phrases using &#22312;</h4>
+				<%= partial(:video, :locals => {:video_link => "v0aYsfjgl24"}) %>
+				<h5 id="place-phrases-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"在" => 2, "家" => 3, "，" => 1, "我" => 4, "吃早饭" => 0, "。" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"我哥哥" => 3, "在家" => 1, "玩儿" => 4, "电脑游戏" => 0, "。" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now you can proceed to the next series." },
 							  :activity_column_size => 7
 							}) %>
 			</div><!-- /.blog-post -->
@@ -144,10 +166,14 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 									<li><a href="#de-shi-hou">&#30340;&#26102;&#20505;</a></li>
 									<li><a href="#yi-hou">&#20197;&#21518;</a></li>
 								</ol>
-							<li><a href="#more-ways">More Ways to Express Time</a></li>
+							<li><a href="#more-ways">More On Expressing Time</a></li>
 								<ol>
 									<li><a href="#sequential-action">Sequential Action</a></li>
 									<li><a href="#past-experience">Past Experience</a></li>
+								</ol>
+							<li><a href="#basic-place">Basic Place Phrases</a></li>
+								<ol>
+									<li><a href="#place-phrases">Using &#22312;</a></li>
 								</ol>
 						</ol>
 				</ol>
