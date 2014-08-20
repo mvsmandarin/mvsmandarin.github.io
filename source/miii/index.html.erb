@@ -97,6 +97,18 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								:english => "Correct! Now you can proceed to the next video." },
 							  :activity_column_size => 7
 							}) %>
+				<h4 id="sequential-action">Sequential Action using &#20808;&#12290;&#12290;&#12290;&#28982;&#21518;</h4>
+				<%= partial(:video, :locals => {:video_link => "_zzyhkgb8a4"}) %>
+				<h5 id="sequential-action-activity">Activity!</h5>
+				<p>This is &#33673;&#33673;'s schedule: 7:00am- Wake up, 7:30am- Go to school, 3:00pm- Return home, 4:00pm: Do homework, 7:00pm: Read, 8:00pm: Sleep. Rearrange the words below to form a grammatically correct sentence about her schedule (including proper punctuation placement).</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"莉莉" => 1, "先" => 3, "做作业" => 0, "，" => 4, "然后" => 2, "看书" => 5, "。" => 6 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next video" },
+							  :activity_column_size => 7
+							}) %>
 			</div><!-- /.blog-post -->
 		</div><!-- /.blog-main -->
 
@@ -115,6 +127,7 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 									<li><a href="#basic-time-phrases">Basic Time Phrases</a></li>
 									<li><a href="#de-shi-hou">&#30340;&#26102;&#20505;</a></li>
 									<li><a href="#yi-hou">&#20197;&#21518;</a></li>
+									<li><a href="#sequential-action">Sequential Action</a></li>
 								</ol>
 						</ol>
 				</ol>
