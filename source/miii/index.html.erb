@@ -147,6 +147,28 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								:english => "Correct! Now you can proceed to the next series." },
 							  :activity_column_size => 7
 							}) %>
+				<h3 id="question-words">Question Words!!</h3>
+				<p>Alright, let's move on to our question words series!</p>
+				<h4 id="shen-me">Asking What? (&#20160;&#20040;&#65311;)</h4>
+				<%= partial(:video, :locals => {:video_link => "IlqAVY3n16I"}) %>
+				<h5 id="shen-me-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"你" => 2, "的" => 3, "猫" => 1, "叫" => 4, "什么" => 0, "名字" => 5, "？" => 6 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"我哥哥" => 5, "最喜欢" => 0, "的" => 2, "宠物" => 1, "是" => 3, "什么" => 4, "？" => 6 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now you can proceed to the next video." },
+							  :activity_column_size => 7
+							}) %>
 			</div><!-- /.blog-post -->
 		</div><!-- /.blog-main -->
 
@@ -174,6 +196,10 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							<li><a href="#basic-place">Basic Place Phrases</a></li>
 								<ol>
 									<li><a href="#place-phrases">Using &#22312;</a></li>
+								</ol>
+							<li><a href="#question-words">Question Words</a></li>	
+								<ol>
+									<li><a href="#shen-me">Asking What? (&#20160;&#20040;&#65311;)</a></li>
 								</ol>
 						</ol>
 				</ol>
