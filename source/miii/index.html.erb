@@ -169,6 +169,46 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								:english => "Correct! Now you can proceed to the next video." },
 							  :activity_column_size => 7
 							}) %>
+				<h4 id="shei">Asking Who? (&#35841;&#65311;)</h4>
+				<%= partial(:video, :locals => {:video_link => "b4gnizrWca4"}) %>
+				<h5 id="shei-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"你" => 1, "的" => 0, "家" => 2, "有" => 4, "谁" => 3, "？" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"谁" => 3, "喜欢" => 0, "坐" => 2, "飞机" => 1, "？" => 4 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now you can proceed to the next video." },
+							  :activity_column_size => 7
+							}) %>
+				<h4 id="zen-me">Asking How? (&#24590;&#20040;&#65311;)</h4>
+				<%= partial(:video, :locals => {:video_link => "iw_ePnUF-iY"}) %>
+				<h5 id="zen-me-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"你" => 1, "今天" => 3, "怎么" => 2, "样" => 0, "？" => 4 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"你" => 4, "妈妈" => 0, "每天" => 2, "怎么" => 1, "上班" => 3, "？" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now you can proceed to the next video." },
+							  :activity_column_size => 7
+							}) %>
 			</div><!-- /.blog-post -->
 		</div><!-- /.blog-main -->
 
@@ -200,6 +240,7 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							<li><a href="#question-words">Question Words</a></li>	
 								<ol>
 									<li><a href="#shen-me">Asking What? (&#20160;&#20040;&#65311;)</a></li>
+									<li><a href="#shei">Asking Who? (&#35841;&#65311;)</a></li>
 								</ol>
 						</ol>
 				</ol>
