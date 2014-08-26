@@ -249,6 +249,26 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								:english => "Correct! Now you can proceed to the next video." },
 							  :activity_column_size => 7
 							}) %>
+				<h4 id="why">Asking Why? (&#20026;&#20160;&#20040;&#65311;)</h4>
+				<%= partial(:video, :locals => {:video_link => "H5T2QAw-PpY"}) %>
+				<h5 id="why-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement). The first should be a question, and the second should be its answer.</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"你" => 1, "为什么" => 3, "喜欢" => 2, "上学" => 0, "？" => 4 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"因为" => 4, "我" => 3, "很喜欢" => 2, "我的" => 1, "学校" => 0, "！" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now you can proceed to the next video." },
+							  :activity_column_size => 7
+							}) %>
 			</div><!-- /.blog-post -->
 		</div><!-- /.blog-main -->
 
