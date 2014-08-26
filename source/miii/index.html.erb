@@ -149,9 +149,9 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							}) %>
 				<h3 id="question-words">Question Words!!</h3>
 				<p>Alright, let's move on to our question words series!</p>
-				<h4 id="shen-me">Asking What? (&#20160;&#20040;&#65311;)</h4>
+				<h4 id="what">Asking What? (&#20160;&#20040;&#65311;)</h4>
 				<%= partial(:video, :locals => {:video_link => "IlqAVY3n16I"}) %>
-				<h5 id="shen-me-activity">Activity!</h5>
+				<h5 id="what-activity">Activity!</h5>
 				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
 				<%= partial(:rearrange_activity,
 							:locals => {
@@ -169,9 +169,9 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								:english => "Correct! Now you can proceed to the next video." },
 							  :activity_column_size => 7
 							}) %>
-				<h4 id="shei">Asking Who? (&#35841;&#65311;)</h4>
+				<h4 id="who">Asking Who? (&#35841;&#65311;)</h4>
 				<%= partial(:video, :locals => {:video_link => "b4gnizrWca4"}) %>
-				<h5 id="shei-activity">Activity!</h5>
+				<h5 id="who-activity">Activity!</h5>
 				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
 				<%= partial(:rearrange_activity,
 							:locals => {
@@ -223,7 +223,27 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							}) %>
 				<%= partial(:rearrange_activity,
 							:locals => {
-							  :word_order => {"你" => 1, "每天" => 3, "几点" => 2, "睡觉" => 0, "？" => 4 },
+							  :word_order => {"你" => 3, "每天" => 1, "几点" => 2, "睡觉" => 0, "？" => 4 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now you can proceed to the next video." },
+							  :activity_column_size => 7
+							}) %>
+				<h4 id="where">Asking Where? (&#21738;&#20799;&#65295;&#21738;&#37324;&#65311;)</h4>
+				<%= partial(:video, :locals => {:video_link => "PeC_tLyT3kM"}) %>
+				<h5 id="where-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"你" => 1, "在" => 3, "哪里" => 2, "吃" => 0, "午饭" => 4, "？" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"你" => 2, "妈妈" => 4, "住" => 3, "在" => 1, "哪儿" => 0, "？" => 5 },
 							  :congrats_text => {
 								:chinese => "对！",
 								:english => "Correct! Now you can proceed to the next video." },
@@ -259,10 +279,13 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								</ol>
 							<li><a href="#question-words">Question Words</a></li>	
 								<ol>
-									<li><a href="#shen-me">Asking What? (&#20160;&#20040;&#65311;)</a></li>
-									<li><a href="#shei">Asking Who? (&#35841;&#65311;)</a></li>
-									<li><a href="#zen-me">Asking How? (&#24590;&#20040;&#65311;)</a></li>
-									<li><a href="#when">Asking When? (&#20160;&#20040;&#26102;&#20505;&#65311;&#20960;&#28857;&#65311;)</a></li>
+									<li><a href="#what">What? (&#20160;&#20040;&#65311;)</a></li>
+									<li><a href="#who">Who? (&#35841;&#65311;)</a></li>
+									<li><a href="#zen-me">How? (&#24590;&#20040;&#65311;)</a></li>
+									<li><a href="#when">When? (&#20160;&#20040;&#26102;&#20505;&#65311;&#20960;&#28857;&#65311;)</a></li>
+									<li><a href="#where">Where? (&#21738;&#20799;&#65295;&#21738;&#37324;&#65311;)</a></li>
+									<li><a href="#why">Why? (&#20026;&#20160;&#20040;&#65311;)</a></li>
+									<li><a href="#qw-with-mw">How Many? (&#20960;&#65311;) and Which? (&#21738;&#65311;)</a></li>
 								</ol>
 						</ol>
 				</ol>
