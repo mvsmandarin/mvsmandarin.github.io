@@ -329,6 +329,26 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								:english => "Correct! Now you can proceed to the next video." },
 							  :activity_column_size => 7
 							}) %>
+				<h4 id="hai-shi">Asking Questions Using Or (&#36824;&#26159;&#65311;)</h4>
+				<%= partial(:video, :locals => {:video_link => "aIXG4u6zXY0"}) %>
+				<h5 id="hai-shi-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"你" => 2, "喜欢" => 1, "开车" => 5, "还是" => 6, "坐" => 3, "爸爸的" => 4, "车" => 0, "？" => 7 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"你" => 1, "九月" => 8, "的时候" => 4, "坐" => 3, "车" => 2, "还是" => 0, "骑" => 9, "马" => 6, "去" => 7, "欧洲" => 5, "？" => 10 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now you can proceed to the next video." },
+							  :activity_column_size => 9
+							}) %>
 			</div><!-- /.blog-post -->
 		</div><!-- /.blog-main -->
 
@@ -367,7 +387,8 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 									<li><a href="#why">Why? (&#20026;&#20160;&#20040;&#65311;)</a></li>
 									<li><a href="#qw-with-mw">How Many? (&#20960;&#65311;) and Which? (&#21738;&#65311;)</a></li>
 									<li><a href="#ma">Using &#21527;&#65311;</a></li>
-									<li><a href="#opposite-verbs">Questions with Opposite Verbs</a></li>
+									<li><a href="#opposite-verbs">Questions With Opposite Verbs</a></li>
+									<li><a href="#hai-shi">Questions Using "Or" (&#36824;&#26159;&#65311;)</a></li>
 								</ol>
 						</ol>
 				</ol>
