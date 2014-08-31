@@ -351,7 +351,7 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							}) %>
 				<h3 id="measure-words">Measure Words!!</h3>
 				<p>You're almost done with reviewing Mandarin II! Keep it up!</p>
-				<h4 id="intro-mw">Introduction to Measure Words (&#20160;&#20040;&#65311;)</h4>
+				<h4 id="intro-mw">Introduction to Measure Words (Explaining &#20010;)</h4>
 				<%= partial(:video, :locals => {:video_link => "mrubnOSdHLY"}) %>
 				<h5 id="intro-mw-activity">Activity!</h5>
 				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
@@ -366,6 +366,26 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 				<%= partial(:rearrange_activity,
 							:locals => {
 							  :word_order => {"你" => 1, "喜欢" => 0, "哪" => 2, "个" => 4, "地方" => 3, "？" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now you can proceed to the next video." },
+							  :activity_column_size => 7
+							}) %>
+				<h4 id="common-mw">Commonly Used Measure Words (&#21475;&#65292;&#21482;&#65292;&#23478;)</h4>
+				<%= partial(:video, :locals => {:video_link => "WA00GfQUdXc"}) %>
+				<h5 id="common-mw-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"你" => 2, "有" => 4, "几" => 1, "只" => 3, "猫" => 0, "？" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"我" => 4, "在" => 0, "一" => 2, "家" => 5, "公司" => 3, "工作" => 1, "。" => 6 },
 							  :congrats_text => {
 								:chinese => "对！",
 								:english => "Correct! Now you can proceed to the next video." },
@@ -415,6 +435,7 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							<li><a href="#measure-words">Measure Words</a></li>	
 								<ol>
 									<li><a href="#intro-mw">Introduction</a></li>
+									<li><a href="#common-mw">Common MW's</a></li>
 								</ol>
 						</ol>
 				</ol>
