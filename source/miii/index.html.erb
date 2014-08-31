@@ -346,8 +346,30 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							  :word_order => {"你" => 1, "九月" => 8, "的时候" => 4, "坐" => 3, "车" => 2, "还是" => 0, "骑" => 9, "马" => 6, "去" => 7, "欧洲" => 5, "？" => 10 },
 							  :congrats_text => {
 								:chinese => "对！",
-								:english => "Correct! Now you can proceed to the next video." },
+								:english => "Correct! Now you can proceed to the next series of videos." },
 							  :activity_column_size => 9
+							}) %>
+				<h3 id="measure-words">Measure Words!!</h3>
+				<p>You're almost done with reviewing Mandarin II! Keep it up!</p>
+				<h4 id="intro-mw">Introduction to Measure Words (&#20160;&#20040;&#65311;)</h4>
+				<%= partial(:video, :locals => {:video_link => "mrubnOSdHLY"}) %>
+				<h5 id="intro-mw-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"我" => 2, "有" => 4, "三" => 1, "个" => 3, "妹妹" => 0, "。" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"你" => 1, "喜欢" => 0, "哪" => 2, "个" => 4, "地方" => 3, "？" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now you can proceed to the next video." },
+							  :activity_column_size => 7
 							}) %>
 			</div><!-- /.blog-post -->
 		</div><!-- /.blog-main -->
@@ -389,6 +411,10 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 									<li><a href="#ma">Using &#21527;&#65311;</a></li>
 									<li><a href="#opposite-verbs">Questions With Opposite Verbs</a></li>
 									<li><a href="#hai-shi">Questions Using "Or" (&#36824;&#26159;&#65311;)</a></li>
+								</ol>
+							<li><a href="#measure-words">Measure Words</a></li>	
+								<ol>
+									<li><a href="#intro-mw">Introduction</a></li>
 								</ol>
 						</ol>
 				</ol>
