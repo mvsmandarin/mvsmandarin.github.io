@@ -391,6 +391,26 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								:english => "Correct! Now you can proceed to the next video." },
 							  :activity_column_size => 7
 							}) %>
+				<h4 id="nouns-without-mw">Nouns that Don't Use Measure Words (&#22825;&#65292;&#24180;)</h4>
+				<%= partial(:video, :locals => {:video_link => "NQlyD22pLRU"}) %>
+				<h5 id="nouns-without-mw-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"你" => 4, "哥哥" => 2, "喜欢" => 1, "哪" => 3, "天" => 0, "？" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"这" => 4, "年" => 0, "有" => 2, "五十二" => 5, "个" => 3, "星期" => 1, "。" => 6 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now you can proceed to the next video." },
+							  :activity_column_size => 7
+							}) %>
 			</div><!-- /.blog-post -->
 		</div><!-- /.blog-main -->
 
@@ -436,6 +456,7 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								<ol>
 									<li><a href="#intro-mw">Introduction</a></li>
 									<li><a href="#common-mw">Common MW's</a></li>
+									<li><a href="#nouns-without-mw">Nouns Without MW's</a></li>
 								</ol>
 						</ol>
 				</ol>
