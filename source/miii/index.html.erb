@@ -411,6 +411,28 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								:english => "Correct! Now you can proceed to the next video." },
 							  :activity_column_size => 7
 							}) %>
+				<h3 id="comparisons">Making Comparisons!</h3>
+				<p>Just one more video of Mandarin II Review! You got this!</p>
+				<h4 id="using-bi">Using &#27604;</h4>
+				<%= partial(:video, :locals => {:video_link => "fdkXQa-gkog"}) %>
+				<h5 id="using-bi-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement). For the first question, you'll need the following information: Xiaoming's little brother is 1.1 meters tall, but Xiaoming is 1.3 meters tall.</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"小明" => 2, "比" => 3, "他的弟弟" => 1, "高" => 0, "。" => 4 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"走路" => 2, "比" => 4, "骑马" => 0, "慢" => 1, "吗" => 3, "？" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Guess what?! You're done with Mandarin II Review!!" },
+							  :activity_column_size => 7
+							}) %>
 			</div><!-- /.blog-post -->
 		</div><!-- /.blog-main -->
 
@@ -457,6 +479,10 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 									<li><a href="#intro-mw">Introduction</a></li>
 									<li><a href="#common-mw">Common MW's</a></li>
 									<li><a href="#nouns-without-mw">Nouns Without MW's</a></li>
+								</ol>
+							<li><a href="#comparisons">Comparisons</a></li>	
+								<ol>
+									<li><a href="#using-bi">Using &#27604;</a></li>
 								</ol>
 						</ol>
 				</ol>
