@@ -4,7 +4,7 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 ---
 
 <% content_for :stylesheets do %>
-	<%= stylesheet_link_tag "home", "video", "activitystyle" %>
+	<%= stylesheet_link_tag "home", "video", "activitystyle", "questions" %>
 <% end %>
 
 <% content_for :javascripts do %>
@@ -14,11 +14,32 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 <div class="container">
 	<div class="blog-header">
 		<h1 class="blog-title">Mandarin III Videos</h1>
-		<p class="lead blog-description">Mandarin II Grammar Review and Mandarin III Material</p>
+		<p class="lead blog-description">Mandarin II Grammar Review and Mandarin III Listening and Grammar Material</p>
 	</div>
 
 	<div class="row">
 		<div class="col-sm-8 blog-main">
+			<div class="blog-post">
+				<h2 id="fm-begin" class="blog-post-title">Flipped Mastery</h2>
+				<p>Let's start learning new material! In case you need a review of any material from Mandarin II, click <a href="#mii-review">here</a> or use the <a href="#contents">Table of Contents</a> to navigate to wherever you'd like.</p>
+				<hr>
+				<h3 id="ch-1">Chapter One</h3>
+				<p>This chapter is all about colors. This time, we will start with listening practice. Listening videos are designed to help you gain more exposure to spoken Chinese pertaining to the specific topic at hand. You can also use them to help you prepare for the listening mastery. As I explain in the video, feel free to rewatch any part of the video you need to. You can use the numbers on the keyboard (0 through 9) to jump to different parts of the video. Then, answer the questions below to check your understanding.</p>
+				<h4 id="1-L">1: Listening Practice</h4>
+				<%= partial(:video, :locals => {:video_link => "Lz3aFlhUYDA"}) %>
+				<div class="row question-section">
+					<span class="col-md-12">
+						<h5 id="1-L-activity">Questions!</h5>
+							<p>Each video will include a short multiple choice section after it in which you answer questions in English. Remember, though, that the ones on your listening masteries will be in Chinese!</p>
+					</span>
+				</div>
+				<p>1. What is Lingling's mother's favorite color?</p>
+				<div class="button-choices">
+				  	<button type="button" class="btn btn-default">Purple</button>
+				  	<button type="button" class="btn btn-default">Orange</button>
+				  	<button type="button" class="btn btn-default">Green</button>
+				</div>
+			</div>
 			<div class="blog-post">
 				<h2 id="mii-review" class="blog-post-title">Mandarin II Review Time!</h2>
 				<p>So... Remember how Mandarin II was a thing? Check out some of these videos to review some important grammatical structures from last year.</p>
@@ -438,8 +459,15 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 
 		<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
 			<div class="sidebar-module">
-				<h4>Table of Contents</h4>
+				<h4 id="contents">Table of Contents</h4>
 				<ol class="list-unstyled">
+					<li><a href="#fm-begin">Mandarin III</a></li>
+						<ol>
+							<li><a href="#ch-1">Chapter 1: Colors</a></li>
+								<ol>
+									<li><a href="#1-L">Listening</a></li>
+								</ol>
+						</ol>
 					<li><a href="#mii-review">Mandarin II Review</a></li>
 						<ol>
 							<li><a href="#sentence-structure">Basic Sentence Structure</a></li>
