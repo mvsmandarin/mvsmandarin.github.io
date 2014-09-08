@@ -33,10 +33,50 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							<p>Each video will include a short multiple choice section after it in which you answer questions in English. Remember, though, that the ones on your listening masteries will be in Chinese!</p>
 					</span>
 				</div>
-				<p>1. What is Lingling's mother's favorite color?</p>
+				<p>Where is Lanlan’s family from?</p>
 				<%= partial(:mc_questions,
 							:locals => {
-							  :answers => {"Purple" => false, "Orange" => true, "Green" => false},
+							  :answers => {"China" => true, "Italy" => false, "Japan" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 3,
+							  :column_indent => 1
+							}) %>
+				<p>What is Lanlan's favorite color?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Yellow" => false, "Green" => false, "Purple" => true},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 3,
+							  :column_indent => 1
+							}) %>
+				<p>How does Lanlan’s dad go to work?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Bike" => false, "A red public bus" => true, "A yellow subway" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 11,
+							  :column_indent => 1
+							}) %>
+				<p>Where does Lili work?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"A law firm" => false, "A school" => false, "A bank" => true},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 3,
+							  :column_indent => 1
+							}) %>
+				<p>Who likes the color white?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Lanlan" => false, "Lanlan's sister" => true, "Lanlan's dad" => false},
 							  :congrats_text => {
 								:chinese => "对！",
 								:english => "Correct! " },
