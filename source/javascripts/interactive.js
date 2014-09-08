@@ -15,9 +15,9 @@ $(function () {
 			vertical: false,
 			onDrop: function (item, container, _super) {
 				if(validate(container.el.sortable("serialize").get())) {
-					container.el.next(".js-activity-validate").show();
+					container.el.next('.js-activity-validate').show();
 				} else {
-					container.el.next(".js-activity-validate").hide();
+					container.el.next('.js-activity-validate').hide();
 				}
 				_super(item, container);
 			},
@@ -25,4 +25,14 @@ $(function () {
 				return isContainer ? children : parseInt(parent.attr('data-value'))
 			}
 		});
+
+	var mcquestions = $('.js-activity-multiple-choice').each(function (questionNumber, question) {
+		$(question).children("button").click(function () {
+			if($(this).attr('data-value') === "right") {
+				$(question).next(".js-activity-validate").show();
+			} else {
+				$(question).next(".js-activity-validate").hide();
+			}
+		});
+	});
 });

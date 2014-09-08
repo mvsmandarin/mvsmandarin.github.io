@@ -26,7 +26,7 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 				<h3 id="ch-1">Chapter One</h3>
 				<p>This chapter is all about colors. This time, we will start with listening practice. Listening videos are designed to help you gain more exposure to spoken Chinese pertaining to the specific topic at hand. You can also use them to help you prepare for the listening mastery. As I explain in the video, feel free to rewatch any part of the video you need to. You can use the numbers on the keyboard (0 through 9) to jump to different parts of the video. Then, answer the questions below to check your understanding.</p>
 				<h4 id="1-L">1: Listening Practice</h4>
-				<%= partial(:video, :locals => {:video_link => "Lz3aFlhUYDA"}) %>
+				<%= partial(:video, :locals => {:video_link => "Ho8TMDgxPIM"}) %>
 				<div class="row question-section">
 					<span class="col-md-12">
 						<h5 id="1-L-activity">Questions!</h5>
@@ -34,10 +34,14 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 					</span>
 				</div>
 				<p>1. What is Lingling's mother's favorite color?</p>
-				<div class="button-choices">
-				  	<button type="button" class="btn btn-default">Purple</button>
-				  	<button type="button" class="btn btn-default">Orange</button>
-				  	<button type="button" class="btn btn-default">Green</button>
+				<div class="button-choices js-activity-multiple-choice">
+				  	<button type="button" class="btn btn-default" data-value="right">Purple</button>
+				  	<button type="button" class="btn btn-default" data-value="wrong">Orange</button>
+				  	<button type="button" class="btn btn-default" data-value="wrong">Green</button>
+				</div>
+				<div class="col-md-7 js-activity-validate" style="display: none;">
+					<span class="activity-check glyphicon glyphicon-ok"></span>
+					<span>对！Correct! Now you can proceed to the next video.</span>
 				</div>
 			</div>
 			<div class="blog-post">
