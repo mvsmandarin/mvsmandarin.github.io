@@ -27,7 +27,7 @@ $(function () {
 		});
 
 	var mcquestions = $('.js-activity-multiple-choice').each(function (questionNumber, question) {
-		$(question).children("button").click(function () {
+		$(question).find("button").click(function () {
 			if($(this).attr('data-value') === "right") {
 				$(question).next(".js-activity-validate").show();
 			} else {

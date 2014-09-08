@@ -1,0 +1,15 @@
+<div class="row activity-section">
+	<span class="col-md-12">
+		<ul class="col-md-<%= activity_column_size %> col-md-offset-<%= column_indent %> button-choices js-activity-multiple-choice">
+		  	<% answers.each do |answer, true_or_false| %>
+		  		<li>
+		  			<button type="button" class="btn btn-default" data-value="<%= true_or_false ? "right" : "wrong" %>"><%= answer %></button>
+		  		</li>
+			<% end %>
+		</ul>
+		<div class="col-md-12 js-activity-validate" style="display: none;">
+			<span class="activity-check glyphicon glyphicon-ok"></span>
+			<span><%= unicodify(congrats_text[:chinese]) + congrats_text[:english] %></span>
+		</div>
+	</span>
+</div>
