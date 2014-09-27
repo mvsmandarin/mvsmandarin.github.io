@@ -28,12 +28,12 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 				<p><a href="http://mvsmandarin.weebly.com/fall-syllabus.html">高老师's Website</a></p>
 				<hr>
 				<h3 id="ch-1">Chapter One</h3>
-				<p>This chapter is all about colors. This time, we will start with listening practice. Listening videos are designed to help you gain more exposure to spoken Chinese pertaining to the specific topic at hand. You can also use them to help you prepare for the listening mastery. As I explain in the video, feel free to rewatch any part of the video you need to. You can use the numbers on your keyboard (0 through 9) to jump to different parts of the video. Then, answer the questions below to check your understanding.</p>
+				<p>This chapter is all about colors. This time, we will start with listening practice. Listening videos are designed to help you gain more exposure to spoken Chinese pertaining to the specific topic at hand. You can also use them to help you prepare for the listening mastery. As I explain in the video, feel free to rewatch any part of the video if you need to. You can use the numbers on your keyboard (0 through 9) to jump to different parts of the video. Then, answer the questions below to check your understanding.</p>
 				<h4 id="1-L">1: Listening Practice</h4>
 				<%= partial(:video, :locals => {:video_link => "Ho8TMDgxPIM"}) %>
 				<div class="row question-section">
 					<span class="col-md-12">
-						<h5 id="1-L-activity">Questions!</h5>
+						<h5 id="1-L-questions">Questions!</h5>
 							<p>Each video will include a short multiple choice section after it in which you answer questions in English. Remember, though, that the ones on your listening masteries will be in Chinese!</p>
 					</span>
 				</div>
@@ -81,6 +81,66 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 				<%= partial(:mc_questions,
 							:locals => {
 							  :answers => {"Lanlan" => false, "Lanlan's sister" => true, "Lanlan's dad" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 3,
+							  :column_indent => 1
+							}) %>
+				<h3 id="ch-2">Chapter Two</h3>
+				<p>This chapter is all about clothing. This chapter doesn't introduce any new grammar points that are complex enough to require a video, so, just like Chapter One, we will just have a listening practice video. As we explained last time, listening videos are designed to help you gain more exposure to spoken Chinese pertaining to the specific topic at hand. You can also use them to help you prepare for the listening mastery. Remember that you can always rewatch any part of the video if you need to. You can use the numbers on your keyboard (0 through 9) to jump to different parts of the video. Then, answer the questions below to check your understanding.</p>
+				<h4 id="2-L">2: Listening Practice</h4>
+				<%= partial(:video, :locals => {:video_link => "tKI-0LGnMC0"}) %>
+				<div class="row question-section">
+					<span class="col-md-12">
+						<h5 id="2-L-questions">Questions!</h5>
+							<p>Here's a short multiple choice section so that you can check your understanding. Remember, though, that the ones on your listening masteries will be in Chinese!</p>
+					</span>
+				</div>
+				<p>What color does Dawei like besides green?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Gray" => true, "Black" => false, "Blue" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 3,
+							  :column_indent => 1
+							}) %>
+				<p>How frequently does Dawei wear shorts?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Never" => false, "Daily" => true, "Only on weekends" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 3,
+							  :column_indent => 1
+							}) %>
+				<p>Which of the following article of clothing is worn by the member of Dawei’s family who does not have a job?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Dresses" => false, "Striped clothing" => false, "Sweaters" => true},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 11,
+							  :column_indent => 1
+							}) %>
+				<p>Who wears a blue coat every day at school?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Dawei's dad" => true, "Dawei" => false, "Xiaoming (Dawei's older brother)" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 3,
+							  :column_indent => 1
+							}) %>
+				<p>What color are the leather shoes Xiaoming likes to wear?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Black" => true, "Red" => false, "Brown" => false},
 							  :congrats_text => {
 								:chinese => "对！",
 								:english => "Correct! " },
@@ -514,6 +574,10 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							<li><a href="#ch-1">Chapter 1: Colors</a></li>
 								<ol>
 									<li><a href="#1-L">Listening</a></li>
+								</ol>
+							<li><a href="#ch-2">Chapter 2: Clothes</a></li>
+								<ol>
+									<li><a href="#2-L">Listening</a></li>
 								</ol>
 						</ol>
 					<li><a href="#mii-review">Mandarin II Review</a></li>
