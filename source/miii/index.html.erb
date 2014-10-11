@@ -147,6 +147,66 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							  :activity_column_size => 3,
 							  :column_indent => 1
 							}) %>
+				<h3 id="ch-3">Chapter Three</h3>
+				<p>This chapter is a continuation. For this chapter, we're going to have a listening and a grammar video.</p>
+				<h4 id="3-L">3: Listening Practice</h4>
+				<%= partial(:video, :locals => {:video_link => "mpDsf2bLln8"}) %>
+				<div class="row question-section">
+					<span class="col-md-12">
+						<h5 id="3-L-questions">Questions!</h5>
+							<p>Here's a short multiple choice section so that you can check your understanding. Remember, though, that the ones on your listening masteries will be in Chinese!</p>
+					</span>
+				</div>
+				<p>What color is Zhangwei's tie?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Gray" => false, "Green" => true, "Blue" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 3,
+							  :column_indent => 1
+							}) %>
+				<p>When does Zhangwei wear jeans?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Never" => false, "Daily" => false, "After work" => true},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 5,
+							  :column_indent => 1
+							}) %>
+				<p>One member of Xiaoming's family is a banker. What color are the clothes she or he likes wearing at work?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Brown" => false, "Orange" => false, "Purple" => true},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 6,
+							  :column_indent => 1
+							}) %>
+				<p>When does Meihui play tennis?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"After work" => false, "Every day" => false, "On weekends" => true},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 7,
+							  :column_indent => 1
+							}) %>
+				<p>Who likes wearing brown pants?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Xiaoming" => true, "Zhangwei" => false, "Meihui" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 3,
+							  :column_indent => 1
+							}) %>
 			</div>
 			<div class="blog-post">
 				<h2 id="mii-review" class="blog-post-title">Mandarin II Review Time!</h2>
@@ -578,6 +638,11 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							<li><a href="#ch-2">Chapter 2: Clothes</a></li>
 								<ol>
 									<li><a href="#2-L">Listening</a></li>
+								</ol>
+							<li><a href="#ch-3">Chapter 3: Clothes</a></li>
+								<ol>
+									<li><a href="#3-L">Listening</a></li>
+									<li><a href="#le-completed-action">了 for Completed Action</a></li>
 								</ol>
 						</ol>
 					<li><a href="#mii-review">Mandarin II Review</a></li>
