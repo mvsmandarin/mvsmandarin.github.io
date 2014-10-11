@@ -207,6 +207,26 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							  :activity_column_size => 3,
 							  :column_indent => 1
 							}) %>
+				<h4 id="le-completed-action">Grammar: Completed Action Using 了</h4>
+				<%= partial(:video, :locals => {:video_link => "mpDsf2bLln8"}) %>
+				<h5 id="le-completed-action-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement). Remember that the word 了 can go in two different places! Put the 了 after the verb in the first sentence, but after the phrase containing the action in the second.</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"今天早上，" => 3, "我的朋友" => 1, "看" => 4, "了" => 2, "电影" => 0, "。" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"我的朋友" => 2, "昨天" => 4, "看" => 1, "书" => 3, "了" => 0, "。" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct!" },
+							  :activity_column_size => 7
+							}) %>
 			</div>
 			<div class="blog-post">
 				<h2 id="mii-review" class="blog-post-title">Mandarin II Review Time!</h2>
