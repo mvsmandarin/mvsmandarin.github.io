@@ -228,6 +228,87 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							  :activity_column_size => 7
 							}) %>
 			</div>
+			<h3 id="ch-4-5">Chapter Four/Five</h3>
+				<p>Chapters 4 and 5 have been merged, since they are both about weather! This time, we're going to have a listening video and two grammar videos.</p>
+				<h4 id="4-5-L">4: Listening Practice</h4>
+				<%= partial(:video, :locals => {:video_link => "yBxPeq2MjXA"}) %>
+				<div class="row question-section">
+					<span class="col-md-12">
+						<h5 id="4-5-L-questions">Questions!</h5>
+							<p>Here's a short multiple choice section so that you can check your understanding. Remember, though, that the ones on your listening masteries will be in Chinese!</p>
+					</span>
+				</div>
+				<p>What does Miss Li think of the weather where she lives?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"It's the best" => true, "It's awful" => false, "It's okay" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 3,
+							  :column_indent => 1
+							}) %>
+				<p>What was the weather in Beijing like last night?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Snowy" => false, "Windy" => false, "Thunderstorms" => true},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 5,
+							  :column_indent => 1
+							}) %>
+				<p>Tomorrow at noon, what will be the temperature?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"15-18 degrees" => false, "Around 10 degrees" => true, "Below zero" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 6,
+							  :column_indent => 1
+							}) %>
+				<p>Why does Miss Li want to wear her purple coat tomorrow?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"It could rain at noon" => true, "She wears one every day" => false, "Purple is her favorite color" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 8,
+							  :column_indent => 1
+							}) %>
+				<p>What is the weather like in France in the winter?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Cold and snowy" => true, "Stormy every day" => false, "Windy and cloudy" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 5,
+							  :column_indent => 1
+							}) %>
+				<h4 id="le-completed-action">Grammar: Completed Action Using 了</h4>
+				<%= partial(:video, :locals => {:video_link => "52L5tHWpE7c"}) %>
+				<h5 id="le-completed-action-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement). Remember that the word 了 can go in two different places! Put the 了 after the verb in the first sentence, but after the phrase containing the action in the second.</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"今天早上，" => 3, "我的朋友" => 1, "看" => 4, "了" => 2, "电影" => 0, "。" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"我的朋友" => 2, "昨天" => 4, "看" => 1, "书" => 3, "了" => 0, "。" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct!" },
+							  :activity_column_size => 7
+							}) %>
+			</div>
 			<div class="blog-post">
 				<h2 id="mii-review" class="blog-post-title">Mandarin II Review Time!</h2>
 				<p>So... Remember how Mandarin II was a thing? Check out some of these videos to review some important grammatical structures from last year.</p>
@@ -663,6 +744,10 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								<ol>
 									<li><a href="#3-L">Listening</a></li>
 									<li><a href="#le-completed-action">了 for Completed Action</a></li>
+								</ol>
+							<li><a href="#ch-4-5">Chapter 4/5: Weather</a></li>
+								<ol>
+									<li><a href="#4-5-L">Listening</a></li>
 								</ol>
 						</ol>
 					<li><a href="#mii-review">Mandarin II Review</a></li>
