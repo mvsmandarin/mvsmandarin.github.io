@@ -348,12 +348,12 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							  :activity_column_size => 7
 							}) %>
 			<h3 id="ch-6-7">Chapter Six/Seven</h3>
-				<p>Chapters six and seven have been merged, since they are both about vacations! This time, we're going to have a listening video and two grammar videos. *Note: interactive activities for grammar videos will be up soon!!*</p>
+				<p>Chapters six and seven have been merged, since they are both about vacations! This time, we're going to have a listening video and two grammar videos.</p>
 				<h4 id="6-7-L">Chapter Six/Seven Listening Practice</h4>
 				<%= partial(:video, :locals => {:video_link => "LAn72jVPjlQ"}) %>
 				<div class="row question-section">
 					<span class="col-md-12">
-						<h5 id="4-5-L-questions">Questions!</h5>
+						<h5 id="6-7-L-questions">Questions!</h5>
 							<p>Here's a short multiple choice section so that you can check your understanding. Remember, though, that the ones on your listening masteries will be in Chinese!</p>
 					</span>
 				</div>
@@ -409,8 +409,44 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							}) %>
 				<h4 id="shi-de">Using 是。。。的</h4>
 				<%= partial(:video, :locals => {:video_link => "z26J-cSyxYc"}) %>
+				<h5 id="shi-de-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement): one question and one answer. Pretend that we have already established a topic: your trip to France.</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"你" => 3, "是" => 0, "在法国" => 6, "做" => 2, "什么" => 5, "的" => 1, "？" => 7 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"我" => 3, "是" => 4, "看" => 1, "好多" => 2, "书" => 0, "。" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next grammar video." },
+							  :activity_column_size => 7
+							}) %>
 				<h4 id="verb-obj">Verb-Object Phrases</h4>
 				<%= partial(:video, :locals => {:video_link => "fYI2GTFHXjI"}) %>
+				<h5 id="verb-obj-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement). Both of them split verb-object phrases.</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"你" => 4, "看" => 0, "三" => 3, "本" => 2, "书" => 1, "。" => 5 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 7
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"睡" => 2, "一个" => 1, "好" => 0, "觉" => 3, "！" => 4 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next grammar video." },
+							  :activity_column_size => 7
+							}) %>
 			</div>
 			<div class="blog-post">
 				<h2 id="mii-review" class="blog-post-title">Mandarin II Review Time!</h2>
