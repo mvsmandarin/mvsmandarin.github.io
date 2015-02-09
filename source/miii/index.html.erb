@@ -348,9 +348,65 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							  :activity_column_size => 7
 							}) %>
 			<h3 id="ch-6-7">Chapter Six/Seven</h3>
-				<p>Chapters six and seven have been merged, since they are both about vacations! This time, we're going to have a listening video and two grammar videos. *Note: interactive activities and questions will be up soon!!*</p>
+				<p>Chapters six and seven have been merged, since they are both about vacations! This time, we're going to have a listening video and two grammar videos. *Note: interactive activities for grammar videos will be up soon!!*</p>
 				<h4 id="6-7-L">Chapter Six/Seven Listening Practice</h4>
 				<%= partial(:video, :locals => {:video_link => "LAn72jVPjlQ"}) %>
+				<div class="row question-section">
+					<span class="col-md-12">
+						<h5 id="4-5-L-questions">Questions!</h5>
+							<p>Here's a short multiple choice section so that you can check your understanding. Remember, though, that the ones on your listening masteries will be in Chinese!</p>
+					</span>
+				</div>
+				<p>Where is Zhang Laoshi staying for her summer vacation?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Beijing" => false, "London" => false, "America" => true},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 3,
+							  :column_indent => 1
+							}) %>
+				<p>What does Zhang Laoshi like to do the most in the summer?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Sunbathe" => true, "Swim" => false, "Read books" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 5,
+							  :column_indent => 1
+							}) %>
+				<p>How many books has Zhang Laoshi already read?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Fourteen" => false, "Four" => true, "One" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 6,
+							  :column_indent => 1
+							}) %>
+				<p>When is Zhang Laoshi going to Canada with her family?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Next December" => true, "Next February" => false, "During the summer" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 8,
+							  :column_indent => 1
+							}) %>
+				<p>Who likes ice skating?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Zhang Laoshi's sister" => false, "Zhang Laoshi's parents" => true, "Zhang Laoshi" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct!" },
+							  :activity_column_size => 5,
+							  :column_indent => 1
+							}) %>
 				<h4 id="shi-de">Using 是。。。的</h4>
 				<%= partial(:video, :locals => {:video_link => "z26J-cSyxYc"}) %>
 				<h4 id="verb-obj">Verb-Object Phrases</h4>
