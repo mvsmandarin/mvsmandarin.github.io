@@ -448,6 +448,66 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								:english => "Correct! Now proceed to the next grammar video." },
 							  :activity_column_size => 7
 							}) %>
+			<h3 id="ch-8">Chapter Eight</h3>
+				<p>Chapter eight is about hobbies! This time, we're going to have a listening video and three grammar videos.</p>
+				<h4 id="8-L">Chapter Eight Listening Practice</h4>
+				<%= partial(:video, :locals => {:video_link => "UBM10BW0-zM"}) %>
+				<div class="row question-section">
+					<span class="col-md-12">
+						<h5 id="8-L-questions">Questions!</h5>
+							<p>Here's a short multiple choice section so that you can check your understanding. Remember, though, that the ones on your listening masteries will be in Chinese!</p>
+					</span>
+				</div>
+				<p>What kind of music does Miss Chen like to listen to?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Pop songs" => true, "Classical music" => false, "Every kind" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 5,
+							  :column_indent => 1
+							}) %>
+				<p>When does Miss Chen play video games?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Every weekend" => false, "After finishing her homework" => true, "Before school" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 5,
+							  :column_indent => 1
+							}) %>
+				<p>What does Miss Chen's little sister do after school?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Read novels" => false, "Swim" => false, "Dance" => true},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 6,
+							  :column_indent => 1
+							}) %>
+				<p>Who likes watching TV?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Miss Chen's parents" => true, "Miss Chen's whole family" => false, "Miss Chen" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 8,
+							  :column_indent => 1
+							}) %>
+				<p>What does Miss Chen's family do while eating dinner?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Watch TV" => false, "Read" => true, "Watch movies" => true},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct!" },
+							  :activity_column_size => 5,
+							  :column_indent => 1
+							}) %>
 			</div>
 			<div class="blog-post">
 				<h2 id="mii-review" class="blog-post-title">Mandarin II Review Time!</h2>
@@ -897,6 +957,10 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 									<li><a href="#6-7-L">Listening</a></li>
 									<li><a href="#shi-de">Using 是...的</a></li>
 									<li><a href="#verb-obj">Verb-Object Phrases</a></li>
+								</ol>
+							<li><a href="#ch-8">Chapter 8: Hobbies</a></li>
+								<ol>
+									<li><a href="#8-L">Listening</a></li>
 								</ol>
 						</ol>
 					<li><a href="#mii-review">Mandarin II Review</a></li>
