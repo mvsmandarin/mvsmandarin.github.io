@@ -501,14 +501,13 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 				<p>What does Miss Chen's family do while eating dinner?</p>
 				<%= partial(:mc_questions,
 							:locals => {
-							  :answers => {"Watch TV" => false, "Read" => true, "Watch movies" => true},
+							  :answers => {"Watch TV" => false, "Read" => false, "Watch movies" => true},
 							  :congrats_text => {
 								:chinese => "对！",
 								:english => "Correct!" },
 							  :activity_column_size => 5,
 							  :column_indent => 1
 							}) %>
-			</div>
 			<h4 id="topic-comment">Chapter Eight Grammar: Topic Comment Using 都</h4>
 				<%= partial(:video, :locals => {:video_link => "VaCayC0HQAc"}) %>
 				<h5 id="topic-comment-activity">Activity!</h5>
@@ -571,6 +570,67 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								:english => "Correct! Now proceed to the next grammar video." },
 							  :activity_column_size => 7
 							}) %>
+			<h3 id="ch-9">Chapter Nine</h3>
+				<p>Chapter nine is about sports! This time, we're going to have a listening video and three grammar videos.</p>
+				<h4 id="9-L">Chapter Nine Listening Practice</h4>
+				<%= partial(:video, :locals => {:video_link => "JvakCHi5FXQ"}) %>
+				<div class="row question-section">
+					<span class="col-md-12">
+						<h5 id="9-L-questions">Questions!</h5>
+							<p>Here's a short multiple choice section so that you can check your understanding. Remember, though, that the ones on your listening masteries will be in Chinese!</p>
+					</span>
+				</div>
+				<p>Which of the following sports does Guangming not play?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Ping pong" => false, "Golf" => true, "Tennis" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 5,
+							  :column_indent => 1
+							}) %>
+				<p>How long did Guangming's sister run this morning?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"15 minutes" => false, "An hour" => false, "45 minutes" => true},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 5,
+							  :column_indent => 1
+							}) %>
+				<p>Who likes playing badminton?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Guangming" => false, "Guangming's sister" => true, "Guangming's dad" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 6,
+							  :column_indent => 1
+							}) %>
+				<p>Where does Guangming's dad like to play soccer?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"In China" => true, "At home" => false, "At his friend's house" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 8,
+							  :column_indent => 1
+							}) %>
+				<p>What sport does Guangming's dad like to play with friends?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Basketball" => false, "Soccer" => false, "Volleyball" => true},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct!" },
+							  :activity_column_size => 5,
+							  :column_indent => 1
+							}) %>
+			</div>
 			<div class="blog-post">
 				<h2 id="mii-review" class="blog-post-title">Mandarin II Review Time!</h2>
 				<p>So... Remember how Mandarin II was a thing? Check out some of these videos to review some important grammatical structures from last year.</p>
@@ -1026,6 +1086,10 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 									<li><a href="#topic-comment">Topic Comment</a></li>
 									<li><a href="#wan-yihou">Using 完... 以后</a></li>
 									<li><a href="#de-comp">得 as Complement</a></li>
+								</ol>
+							<li><a href="#ch-9">Chapter 9: Sports</a></li>
+								<ol>
+									<li><a href="#9-L">Listening</a></li>
 								</ol>
 						</ol>
 					<li><a href="#mii-review">Mandarin II Review</a></li>
