@@ -224,7 +224,7 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							  :word_order => {"我的朋友" => 2, "昨天" => 4, "看" => 1, "书" => 3, "了" => 0, "。" => 5 },
 							  :congrats_text => {
 								:chinese => "对！",
-								:english => "Correct!" },
+								:english => "Correct! Now proceed to the next grammar video." },
 							  :activity_column_size => 7
 							}) %>
 				<h4 id="lack-past-action">Chapter Three Grammar: Lack of Past Action</h4>
@@ -567,7 +567,7 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							  :word_order => {"我" => 6, "的" => 1, "妹妹" => 5, "打网球" => 2, "打" => 3, "得" => 0, "很" => 7, "好" => 4, "。" => 8 },
 							  :congrats_text => {
 								:chinese => "对！",
-								:english => "Correct! Now proceed to the next grammar video." },
+								:english => "Correct! Now proceed to the next chapter." },
 							  :activity_column_size => 7
 							}) %>
 			<h3 id="ch-9">Chapter Nine</h3>
@@ -629,6 +629,68 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								:english => "Correct!" },
 							  :activity_column_size => 5,
 							  :column_indent => 1
+							}) %>
+				<h4 id="gen-yiqi">Chapter Nine Grammar: Using 跟。。。一起</h4>
+				<%= partial(:video, :locals => {:video_link => "5BKxw0hU9bQ"}) %>
+				<h5 id="gen-yiqi-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences that use the 跟... 一起 structure.</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"我妈妈" => 5, "跟" => 3, "她的" => 2, "朋友" => 4, "一起" => 1, "打" => 6, "排球" => 0, "。" => 7 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 9
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"我的老师" => 6, "跟" => 4, "他的" => 1, "女儿" => 2, "一起" => 0, "喜欢" => 5, "跑步" => 3, "。" => 7 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next grammar video." },
+							  :activity_column_size => 8
+							}) %>
+			<h4 id="duration-action-1">Chapter Nine Grammar: Duration of Action Part 1</h4>
+				<%= partial(:video, :locals => {:video_link => "24YiXWf_G7U"}) %>
+				<p>Before moving on to Duration of Action Part 2, please make sure to review how to use <a href="#verb-obj">verb object phrases</a>.</p>
+				<h5 id="duration-action-1-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement) using the simple duration of action structure.</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"我" => 8, "妈妈" => 0, "在" => 6, "英国" => 2, "住" => 5, "了" => 1, "三" => 3, "个" => 7, "月" => 4, "。" => 9 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 8
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"我" => 2, "要" => 1, "在" => 0, "法国" => 6, "工作" => 3, "四" => 4, "个" => 7, "星期" => 5, "。" => 8 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next grammar video." },
+							  :activity_column_size => 8
+							}) %>
+			<h4 id="duration-action-2">Chapter Nine Grammar: Duration of Action Part 2</h4>
+				<%= partial(:video, :locals => {:video_link => "kd52gIYao10"}) %>
+				<p>Please make sure you understand <a href="#duration-action-1">Duration of Action Part 1</a> before moving on. If you need more review on how to use verb object phrases, click <a href="#verb-obj">here</a>.</p>
+				<h5 id="duration-action-2-activity">Activity!</h5>
+				<p>Rearrange the words below to form two grammatically correct sentences (including proper punctuation placement).</p>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"我" => 4, "要" => 1, "踢足球" => 0, "踢" => 6, "三" => 3, "个" => 2, "小时" => 5, "。" => 7 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! Now proceed to the next sentence." },
+							  :activity_column_size => 6
+							}) %>
+				<%= partial(:rearrange_activity,
+							:locals => {
+							  :word_order => {"你" => 2, "的" => 1, "姐姐" => 6, "打羽毛球" => 5, "打" => 3, "了" => 0, "五十" => 7, "分钟" => 4, "。" => 8 },
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct!" },
+							  :activity_column_size => 7
 							}) %>
 			</div>
 			<div class="blog-post">
@@ -1090,6 +1152,9 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 							<li><a href="#ch-9">Chapter 9: Sports</a></li>
 								<ol>
 									<li><a href="#9-L">Listening</a></li>
+									<li><a href="#gen-yiqi">Using 跟... 一起</a></li>
+									<li><a href="#duration-action-1">Duration of Action 1</a></li>
+									<li><a href="#duration-action-2">Duration of Action 2</a></li>
 								</ol>
 						</ol>
 					<li><a href="#mii-review">Mandarin II Review</a></li>
