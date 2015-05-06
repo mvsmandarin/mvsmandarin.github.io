@@ -692,6 +692,66 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 								:english => "Correct!" },
 							  :activity_column_size => 8
 							}) %>
+			<h3 id="ch-10">Chapter Ten</h3>
+				<p>Chapter ten is about the arts! This time, we're going to have a listening video and three grammar videos.</p>
+				<h4 id="10-L">Chapter Ten Listening Practice</h4>
+				<%= partial(:video, :locals => {:video_link => "XCvMqn1aQuU"}) %>
+				<div class="row question-section">
+					<span class="col-md-12">
+						<h5 id="10-L-questions">Questions!</h5>
+							<p>Here's a short multiple choice section so that you can check your understanding. Remember, though, that the ones on your listening masteries will be in Chinese!</p>
+					</span>
+				</div>
+				<p>What is Mr. Gao's job?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Swimmer" => false, "Athlete" => true, "Music teacher" => true},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 5,
+							  :column_indent => 1
+							}) %>
+				<p>Which instrument has Mr. Gao played since he was small?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Piano" => true, "Violin" => false, "Guitar" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 5,
+							  :column_indent => 1
+							}) %>
+				<p>What did Mrs. Gao do in February?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Start playing guitar" => false, "Join a choir" => true, "Become a music teacher" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 6,
+							  :column_indent => 1
+							}) %>
+				<p>How long does Mrs. Gao play guitar every day?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"An hour" => true, "Three hours" => false, "Thirty minutes" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct! " },
+							  :activity_column_size => 8,
+							  :column_indent => 1
+							}) %>
+				<p>What does Lili like to do while painting?</p>
+				<%= partial(:mc_questions,
+							:locals => {
+							  :answers => {"Listen to music" => true, "Watch TV" => false, "Sing" => false},
+							  :congrats_text => {
+								:chinese => "对！",
+								:english => "Correct!" },
+							  :activity_column_size => 5,
+							  :column_indent => 1
+							}) %>
 			</div>
 			<div class="blog-post">
 				<h2 id="mii-review" class="blog-post-title">Mandarin II Review Time!</h2>
@@ -1155,6 +1215,10 @@ desc: "The site for Mandarin III Videos at the Miami Valley School"
 									<li><a href="#gen-yiqi">Using 跟... 一起</a></li>
 									<li><a href="#duration-action-1">Duration of Action 1</a></li>
 									<li><a href="#duration-action-2">Duration of Action 2</a></li>
+								</ol>
+							<li><a href="#ch-10">Chapter 10: The Arts</a></li>
+								<ol>
+									<li><a href="#10-L">Listening</a></li>
 								</ol>
 						</ol>
 					<li><a href="#mii-review">Mandarin II Review</a></li>
